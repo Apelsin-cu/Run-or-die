@@ -1,0 +1,23 @@
+﻿<Window x:Class="Run_or_die.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Run_or_die"
+        mc:Ignorable="d"
+        Title="Run or die" Height="450" Width="800">
+    <Canvas Name="MyCanvas" Focusable="True" KeyDown="keyIsDown" KeyUp="keyIsUp" Background="Aqua" >
+
+        <Rectangle Name="background" Height="403" Width="1262" Fill="Blue" Canvas.Left="0"/>
+        <Rectangle Name="background2" Height="400" Width="1262" Fill="Green" Canvas.Left="1262"/>
+
+        <Rectangle Name="ground" Height="32" Width="792" Fill="Black" Canvas.Top="403" Canvas.Left="0"/>
+
+        <Rectangle Name="player" Height="99" Width="67" Fill="Brown" Canvas.Top="151" Canvas.Left="110"/>
+
+        <Rectangle Name="obstacie" Height="178" Width="50" Fill="Red" Canvas.Top="320" Canvas.Left="721"/>
+
+        <Label Name="scoreText" FontSize="32" FontWeight="Bold" Content="Счет: 0"/>
+
+    </Canvas>
+</Window>
